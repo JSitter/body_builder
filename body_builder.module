@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_field_widget_info().
+ */
+function body_builder_field_widget_info() {
+    return array(
+        'body_builder' => array(
+            'label' => t('Easily author body content.'),
+            'field types' => array('body', 'text'),
+            'settings' => array(
+                'size' => 60,
+            ),
+            'behaviors' => array(
+                'default value' => FIELD_BEHAVIOR_DEFAULT,
+            )
+        ),
+    );
+}
